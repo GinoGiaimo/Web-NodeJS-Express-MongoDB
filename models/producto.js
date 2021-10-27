@@ -29,7 +29,8 @@ const ProductoSchema = Schema({
     disponible: {
         type:Boolean,
         default: true
-    }
+    },
+    img: {type: String}
 });
 
 ProductoSchema.methods.toJSON = function (){  //NOTA: Al editar este metodo en categorias, el uid del usuario ahorase muestra como _id
